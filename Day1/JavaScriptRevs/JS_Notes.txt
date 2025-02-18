@@ -74,3 +74,21 @@ A.   The Ability of use function as value,
 2. setTimeout helps turn JS which is sinhlethreaded and synchronous into asynchronous.
 3. Event listeners can also invoke closures with scope.   //meaning they can "remember" the variables from their outer function even after the function has finished executing. 
 4. Event listeners consume a lot of memory which can potentially slow down the website therefore it is good practice to remove if it is not used.
+
+
+Two issues while using callbacks
+
+1 - Callback hell
+When a function is passed as an argument to another function, it becomes a callback function. This process continues and there are many callbacks inside another's Callback function.
+This grows the code horizontally instead of vertically. That mechanism is known as callback hell. 
+
+2 - Inversion of control
+The callback function is passed to another callback, this way we lose the control of our code. We don't know what is happening behind the scene and the program becomes very difficult to maintain. 
+That process is called inversion of control.
+
+Pro: 
+JS is a single-thread language and is synchronous by nature, but with callbacks, we can make async calls.
+Cons:
+a. Callback hell - If we have many functions that need to be called, it is easy to fall into a callback hell - many callbacks chain together
+b. Inversion of control - We give the power to the function that calls our function, maybe that function will never be called, 
+or something in their function makes our function be called twice.
