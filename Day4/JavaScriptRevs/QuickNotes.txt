@@ -1,0 +1,106 @@
+Points To remember:
+
+1. *JavaScript*: A high-level, dynamic programming language used primarily for web development.
+2. *Variable*: A container for storing data values in JavaScript.
+3. *Function*: A block of code designed to perform a specific task, executed when called.
+4. *Array*: A data structure that can store multiple values in a single variable.
+5. *Object*: A collection of key-value pairs that represent an entity or structure.
+6. *Method*: A function associated with an object.
+7. *Prototype*: An object from which other objects inherit properties and methods.
+8. *Closure*: A feature where a function retains access to its lexical scope, even when the function is executed outside that scope.
+9. *Callback*: A function passed into another function as an argument, which is then invoked inside the outer function.
+10. *Event*: An action or occurrence recognized by the browser, like clicks or key presses, that can be handled using JavaScript.
+11. *Promise*: An object representing the eventual completion (or failure) of an asynchronous operation.
+12. *Async/Await*: Syntax used to handle asynchronous code in a more readable manner.
+13. *Null*: A special value representing "no value" or "nothing".
+14. *Undefined*: A variable that has been declared but not assigned a value.
+15. *NaN*: Stands for "Not-a-Number"; indicates that a value is not a legal number.
+16. *Hoisting*: JavaScript's default behavior of moving declarations to the top of the scope.
+17. *Scope*: The context in which variables and functions are accessible.
+18. *Global Scope*: Variables or functions accessible from anywhere in the code.
+19. *Local Scope*: Variables or functions accessible only within the function or block where they are defined.
+20. *Lexical Scope*: The ability to access variables based on where they are declared in the source code.
+21. *IIFE (Immediately Invoked Function Expression)*: A function that runs as soon as it is defined.
+22. *Arrow Function*: A shorthand syntax for writing function expressions using =>.
+23. *Module*: A file containing related code, typically functions, classes, or variables, that can be imported/exported.
+24. *Export/Import*: Syntax used to share code between modules.
+25. *Destructuring*: A syntax for unpacking values from arrays or properties from objects into distinct variables.
+26. *Spread Operator*: A syntax ... used to expand arrays or objects into individual elements.
+27. *Rest Operator*: A syntax ... used to gather multiple elements into an array.
+28. *Template Literals*: Strings that allow embedded expressions using backticks (`` ` ``) and ${}.
+29. *DOM (Document Object Model)*: A programming interface for HTML and XML documents, representing them as a tree structure.
+30. *Event Listener*: A procedure or function in JavaScript that waits for an event to occur.
+31. *AJAX (Asynchronous JavaScript and XML)*: A technique for creating fast and dynamic web pages by updating parts of a web page without reloading the whole page.
+32. *JSON (JavaScript Object Notation)*: A lightweight data interchange format, easy for humans to read and write, and easy for machines to parse and generate.
+33. *Regular Expression (RegEx)*: A sequence of characters that define a search pattern, primarily used for string matching.
+34. *Type Coercion*: The automatic or implicit conversion of values from one data type to another (e.g., string to number).
+35. *Strict Mode*: A feature that allows you to place a program or a function in a "strict" operating context, which helps in catching common coding mistakes.
+36. *Event Bubbling*: A method of event propagation where the event starts from the deepest element and then propagates to the outer elements.
+37. *Event Capturing*: A method of event propagation where the event starts from the outermost element and propagates to the inner elements.
+38. *Event Delegation*: A technique for handling events efficiently by using a single event listener for multiple elements.
+39. *Debouncing*: A programming practice used to ensure that time-consuming tasks do not fire so often, typically in response to some event (e.g., resizing, scrolling).
+40. *Throttling*: A technique that ensures a function is called at most once in a specified period.
+41. *Polyfill*: Code that implements a feature on web browsers that do not support the feature natively.
+42. *Transpiler*: A tool that translates code from one language or version to another (e.g., ES6 to ES5).
+43. *Babel*: A popular JavaScript transpiler that converts ECMAScript 2015+ code into a backward-compatible version.
+44. *Webpack*: A module bundler for JavaScript applications, which compiles multiple modules into a single bundle.
+45. *npm (Node Package Manager)*: A package manager for JavaScript, used for managing dependencies in Node.js projects.
+46. *Node.js*: A runtime environment that allows JavaScript to be run on the server-side.
+47. *Event Loop*: A mechanism that handles and processes events and asynchronous tasks in JavaScript.
+48. *V8 Engine*: The JavaScript engine developed by Google, used in Chrome and Node.js.
+49. *Garbage Collection*: The process of automatically freeing memory by clearing out objects that are no longer in use.
+50. *JIT (Just-In-Time) Compilation*: A method of executing code that involves compiling bytecode to machine code at runtime.
+51. *Async Function*: A function that returns a Promise and allows the use of await.
+52. *Await*: A keyword that makes JavaScript wait until a Promise is resolved or rejected before moving to the next line.
+53. *EventEmitter*: A pattern in Node.js that allows objects to emit events and handle them with listeners.
+54. *Promise.all()*: A method that waits for all Promises to be resolved or any to be rejected.
+55. *Promise.race()*: A method that waits for the first Promise to be resolved or rejected.
+56. *Symbol*: A primitive data type introduced in ES6, used to create unique identifiers.
+57. *Iterator*: An object that enables traversal over a collection, such as an array or a string.
+58. *Generator Function*: A function that can be paused and resumed, producing a sequence of values.
+59. *Proxy*: An object that wraps another object and intercepts operations on it, like reading, writing, and function invocation.
+60. *Reflect*: A built-in object that provides methods for interceptable JavaScript operations, often used with Proxies.
+61. *Mixin*: A class containing methods that can be used by other classes without inheriting from them.
+62. *Currying*: A technique where a function with multiple arguments is transformed into a sequence of functions, each with a single argument.
+63. *Memoization*: An optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again.
+64. **Strict Equality (===): A comparison that checks both the type and value of the operands.
+65. **Loose Equality (==): A comparison that converts the operands to the same type before checking equality.
+66. *Truthy/Falsy*: Values that are coerced to true or false in a Boolean context.
+67. *Map*: A data structure that holds key-value pairs, where keys can be of any type.
+68. *Set*: A data structure that holds unique values, without duplicates.
+69. *WeakMap*: A variation of Map that allows only objects as keys and does not prevent garbage collection of the key objects.
+70. *WeakSet*: A variation of Set that allows only objects as values and does not prevent garbage collection of the values.
+71. *Event Propagation*: The flow of events through the DOM, involving capturing, target, and bubbling phases.
+72. *Higher-Order Function*: A function that takes another function as an argument or returns a function.
+73. *Single Threaded*: A property of JavaScript where only one task can be executed at a time.
+74. *Concurrency*: The ability to run multiple tasks in overlapping periods, not necessarily simultaneously.
+75. *Asynchronous Programming*: A method of programming where tasks are executed independently, often using callbacks, promises, or async/await.
+76. *Promises/A+ Specification*: A set of rules defining the behavior of Promises in JavaScript.
+77. *Microtask Queue*: A queue for tasks that should be executed immediately after the currently executing script (e.g., promise callbacks).
+78. *Macrotask Queue*: A queue for tasks that are scheduled to be executed later, such as events and timers.
+79. *Reflow*: The process by which the browser recalculates the positions and dimensions of elements in the DOM.
+80. *Repaint*: The process of applying changes to the appearance of elements in the DOM.
+81. *Shadow DOM*: A web standard that allows encapsulation of DOM and CSS, enabling a cleaner and more modular design.
+82. *Custom Elements*: A set of APIs that allow the creation of custom HTML tags.
+83. *Web Components*: A suite of technologies that allow the creation of reusable and encapsulated custom elements.
+84. *Service Worker*: A script that runs in the background, separate from the web page, enabling features like push notifications and offline access.
+
+
+85. *Fetch API*: A modern interface for making HTTP requests, replacing XMLHttpRequest.
+86. *IndexedDB*: A low-level API for client-side storage of significant amounts of structured data.
+87. *Local Storage*: A way to store key-value pairs in a web browser, with no expiration time.
+88. *Session Storage*: Similar to Local Storage but data is cleared when the page session ends.
+89. *Promise Chaining*: A pattern of using multiple .then() methods to handle the results of a sequence of asynchronous operations.
+90. *ES6/ECMAScript 2015*: The 6th edition of the ECMAScript standard, introducing many new features like let, const, classes, and modules.
+91. *Polyfilling*: The practice of using polyfills to add support for newer JavaScript features in older browsers.
+92. *Lazy Loading*: A design pattern where objects are only loaded or initialized when they are needed.
+93. *Tree Shaking*: A process of removing unused code from the final bundle in JavaScript applications.
+94. *Virtual DOM*: A lightweight representation of the real DOM, used to improve performance in frameworks like React.
+95. *Strict Mode*: A feature that helps in writing more secure JavaScript code by throwing errors for unsafe actions.
+96. *Destructuring Assignment*: A JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
+97. *Default Parameters*: A feature that allows you to initialize parameters with default values if no value is provided.
+98. *Iterables*: Objects that can be iterated over, like arrays, strings, and sets, using a for...of loop.
+99. *Generators*: Functions that can be paused and resumed, allowing the function to yield multiple values over time.
+100. *Spread Syntax*: A syntax in JavaScript represented by three dots (...) that expands an array or object into individual elements or properties.
+
+These terms cover a broad range of fundamental and advanced concepts in JavaScript, providing a solid foundation for understanding the language.
