@@ -92,3 +92,10 @@ Cons:
 a. Callback hell - If we have many functions that need to be called, it is easy to fall into a callback hell - many callbacks chain together
 b. Inversion of control - We give the power to the function that calls our function, maybe that function will never be called, 
 or something in their function makes our function be called twice.
+
+Promise: Think of a promise as a guarantee made by someone (like a function) to do something and provide you with the result later. 
+It's like ordering food at a restaurant. You get a promise (receipt) saying your order will be ready soon. You can wait for it (.then()) or check on it later (.catch()).
+
+Async/Await: Async/await is like asking someone (a function) to do something for you, but instead of waiting for them to finish right there,
+you tell them you'll do something else while they work. 
+It's like asking a friend to pick up your order from the restaurant. You can go do other things (like order a drink) while your friend (the async function) waits for the food (awaits the promise).
