@@ -1,4 +1,4 @@
-const API_URL  = "https://api.github.co/";
+const API_URL  = "https://api.github.com/users/tanish-1";
 async function handlePromise(){
             try{
           const response = await fetch(API_URL);
