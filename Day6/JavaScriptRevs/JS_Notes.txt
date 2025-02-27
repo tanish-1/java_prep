@@ -1,0 +1,113 @@
+Javascript Notes:
+
+
+• At first a global execution context is created, which consists of Memory and code and has 2 phases: 
+               Memory allocation phase and code execution phase.
+              • In the first phase, the variables are assigned "undefined" while functions have their own code.
+              • Whenever there is a function declaration in the code, a separate local execution context gets created having its own phases and is pushed into the call stack.
+              • Once the function ends, the EC is removed from the call stack.
+              • When the program ends, even the global EC is pulled out of the call stack.
+
+• window object is created by the JS engines of the respective browsers when global execution context is created.
+	• whenever an execution context is created a "this" keyword is also created.
+	• at the global level "this" keyword points equals to the global object( window object in case of browsers).
+	• anything that is not inside a function is the "global space".
+	• whenever we create any variables or functions in the "global space", they get attached to the global object( window object in case of browsers).
+	
+	so to access the variables/function defined in the global space , 
+	we can use any of the below:
+		console.log(window.a);
+		console.log(a);
+		console.log(this.a)             //at the global space level, where this points to the window object
+
+
+
+• Scope of a variable is directly dependent on the lexical environment.
+• Whenever an execution context is created, a lexical environment is created. 
+• Lexical environment is the local memory along with the lexical environment of its parent. 
+• Lexical as a term means in hierarchy or in sequence.
+• Having the reference of parent's lexical environment means, the child or the local function can access all the variables and functions defined in the memory space of its lexical parent.
+• The JS engine first searches for a variable in the current local memory space, if its not found here it searches for the variable in the lexical environment of its parent, and if its still not found, 
+   then it searches that variable in the subsequent lexical environments, and the sequence goes on until the variable is found in some lexical environment or the lexical environment becomes NULL.
+• The mechanism of searching variables in the subsequent lexical environments is known as Scope Chain. If a variable is not found anywhere, then we say that the variable is not present in the scope chain.
+
+
+1. let and const are hoisted but its memory is allocated at other place than window which cannot be accessed before initialisation.
+2. Temporal Dead Zone exists until variable is declared and assigned a value.
+3. window.variable OR this.variable will not give value of variable defined using let or const.
+4. We cannot redeclare the same variable with let/const(even with using var the second time).
+5. const variable declaration and initialisation must be done on the same line.
+6. There are three types of error: 
+[1] referenceError {given where variable does not have memory allocation}.
+[2] typeError {given when we change type that is not supposed to be changed}. 
+[3] syntaxError {when proper syntax(way of writing a statement) is not used}.
+
+7. Use const wherever possible followed by let, Use var as little as possible(only if you have to). It helps avoid error.
+8. Initialising variables at the top is good idea, helps shrinks TDZ to zero.
+
+1.  What is Function Statement ?
+A.  A normal function that we create using Naming convention. & By this we can do the Hoisting.
+      For Ex  -  function xyz(){
+                            console.log("Function Statement");
+                       }
+
+2.  What is Function Expression ?
+A.  When we assign a function into a variable that is Function Expression. & We can not do Hoisting by this becz it acts like variable.
+      For Ex - var a = function(){
+                            console.log("Function Expression");
+                    }
+
+3.  What is Anonymous Function ?
+A.  A Function without the name is known as Anonymous Function. & It is used in a place where function are treated as value.
+      For Ex - function(){
+                     }
+
+4.  What is Named Function Expression ?
+A.  A function with a name is known as Named Function Expression.
+      For Ex - var a = function xyx(){
+                            console.log("Names Function Expression");
+                     }
+
+5.  Difference b/w Parameters and Arguments ?
+A.  When we creating a function  & put some variabels in this ( ) that is our Parameters.
+       For Ex - function ab( param1, param2 ){
+                              console.log("
+                      }
+       & When we call this function & pass a variabel in this ( ) that is our Arguments
+       For Ex - ab( 4, 5 );
+
+6.  What is First Class Function Or First class citizens?
+A.   The Ability of use function as value,
+*     Can be passed as an Argument,
+*     Can be executed inside a closured function &
+*     Can be taken as return form.
+
+1. Function that is passed on as argument to another function is called callback function.
+2. setTimeout helps turn JS which is singlethreaded and synchronous into asynchronous.
+3. Event listeners can also invoke closures with scope.   //meaning they can "remember" the variables from their outer function even after the function has finished executing. 
+4. Event listeners consume a lot of memory which can potentially slow down the website therefore it is good practice to remove if it is not used.
+
+
+Two issues while using callbacks
+
+1 - Callback hell
+When a function is passed as an argument to another function, it becomes a callback function. This process continues and there are many callbacks inside another's Callback function.
+This grows the code horizontally instead of vertically. That mechanism is known as callback hell. 
+
+2 - Inversion of control
+The callback function is passed to another callback, this way we lose the control of our code. We don't know what is happening behind the scene and the program becomes very difficult to maintain. 
+That process is called inversion of control.
+
+Pro: 
+JS is a single-thread language and is synchronous by nature, but with callbacks, we can make async calls.
+Cons:
+a. Callback hell - If we have many functions that need to be called, it is easy to fall into a callback hell - many callbacks chain together
+b. Inversion of control - We give the power to the function that calls our function, maybe that function will never be called, 
+or something in their function makes our function be called twice.
+
+Promise: Think of a promise as a guarantee made by someone (like a function) to do something and provide you with the result later. 
+It's like ordering food at a restaurant. You get a promise (receipt) saying your order will be ready soon. You can wait for it (.then()) or check on it later (.catch()).
+
+Async/Await: Async/await is like asking someone (a function) to do something for you, but instead of waiting for them to finish right there,
+you tell them you'll do something else while they work. 
+It's like asking a friend to pick up your order from the restaurant. You can go do other things (like order a drink) while your friend (the async function) waits for the food (awaits the promise).
