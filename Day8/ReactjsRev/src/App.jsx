@@ -21,7 +21,7 @@ const removeValue = () => {
      <h1>chai aur react</h1>
      <h1>counter value : {counter}</h1>
      
-     <button onClick={addValue}>Add Value</button>
+     <button onClick={addValue}>Add Value{counter}</button>
      <br />
      <button onClick={removeValue}>remove value</button>
     </>
